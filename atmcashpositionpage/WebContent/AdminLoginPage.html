@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<script>
+function validateform(){  
+	var name=document.myform.ID.value;  
+	var password=document.myform.PIN.value;  
+	if(name==""||password==""){
+		alert("please fill the required field");  
+		  return false; 
+	}
+	}
+</script>
+
+<center>
+<form name="myform" action="Adminloginservlet" method="post" onsubmit="return validateform()">
+<h3>ENTER YOUR ID</h3>
+<INPUT TYPE="TEXT" name="ID"  /><BR><BR>
+<h3>ENTER PIN NUMBER</h3>
+<input type="password" name="PIN" /><br><br>
+
+
+<input type="submit" class="button" value="Submit" ><br><br>
+</form>
+</center>
+</body>
+</html>
