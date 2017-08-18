@@ -1,0 +1,54 @@
+@CHARSET "ISO-8859-1";
+.indexstyle
+{
+	a:link {
+
+    background-color: grey;
+
+    color: white;
+
+    padding: 14px 25px;
+
+    text-align: center; 
+
+    text-decoration: none;
+
+    display: inline-block;
+
+}
+
+a:visited {
+
+ background-color: grey;
+
+ color:lightyellow;
+
+ padding: 14px 25px;
+
+ text-align: center; 
+
+ text-decoration: none;
+
+  display: inline-block;
+
+}
+
+a:hover {
+
+     background-color: grey;
+
+     color: blue;
+
+     padding: 14px 25px;
+
+     text-align: center; 
+
+     text-decoration: underline;
+
+      display: inline-block;
+
+     
+
+}
+	
+}

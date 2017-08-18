@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript">
+function validate()
+{
+var v1=document.forms["myForm"]["name"].value;
+var v2=document.forms["myForm"]["id"].value;
+}
+if(v1==""&&v2=="")
+{
+alert("please filled out the fields");
+return false;
+}
+else
+{
+alert("Successfully sign up");
+return true;
+}
+
+</script>
+</head>
+<body BACKGROUND="C:\Users\XBBNHC2\Desktop\REFERENCE\download4.jpg">
+<H1 style="font color:darkblue"><CENTER>OWNER</CENTER></H1><BR><BR><BR>
+
+<FORM name="myForm" method="post" action="OwnerServlet" onSubmit="validate();">
+<center>
+<b><font color="darkblue">NAME:<input type="text" name="name" required><br><br><br></b>
+
+
+
+<b>ID:</b><input type="text" name="id" required><br><br><br></font>
+
+<CENTER>
+
+<input type="SUBMIT" VALUE="SUBMIT" >
+</CENTER>
+</center>
+</FORM>
+</body>
+</html>

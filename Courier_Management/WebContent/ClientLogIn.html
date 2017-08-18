@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script>
+function display()
+{
+	if(document.forms['form'].PASSWORD.value=="" || document.forms['form'].name.value=="")
+
+    {
+
+    alert("Please fill all fields");
+
+    return false;
+    }
+}
+</script>
+</head>
+<body BACKGROUND="C:\Users\XBBNHC2\Desktop\REFERENCE\new22.jpg">
+<form name="form" method="post" action="SignInClient" onSubmit="display();">
+
+<center><B><H1>CLIENT SIGN IN</H1></B></center><br><br><br><br>
+<CENTER><b>NAME</b>     :<input type="text" name="name"><br><br><br><br>
+<b>PASSWORD</b>       :<input type="PASSWORD" name="PASSWORD"><br>
+<br><BR><br>
+<CENTER><b>ID</b>     :<input type="text" name="id"><br><br><br><br>
+</CENTER>
+<CENTER>
+<input type="SUBMIT" value="SUBMIT">
+</CENTER>
+</form>
+</body>
+</html>

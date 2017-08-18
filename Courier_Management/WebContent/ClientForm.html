@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>CLIENT DETAILS</title>
+<script type="text/javascript">
+function display()
+{
+if(document.forms['frm'].PASSWORD.value!=document.forms['frm'].PASSWORD1.value)
+
+      {
+
+      alert("Password and re-entered password is not the same");
+
+      return false;
+      }
+}
+</script>
+
+
+</head>
+<body BACKGROUND="C:\Users\XBBNHC2\Desktop\REFERENCE\new22.jpg">
+
+<h1><center>CLIENT DETAILS</center></h1>
+<BR><BR><BR>
+
+
+<FORM name="frm" method="post" action="CServlet"  onSubmit="display();">
+
+<b>COURIER ID:</b><input type="text" name="id"><br><br><br>
+<b>NAME:</b><input type="text" name="name"><br><br><br>
+<b>DATE:</b><input type="text" name="date"><br><br><br>
+<b>PASSWORD:</b><INPUT TYPE="PASSWORD" NAME="PASSWORD"><BR><BR><BR>
+<b>RE-ENTER PASSWORD:</b><INPUT TYPE="PASSWORD" NAME="PASSWORD1"><BR><BR><BR>
+<b>ADDRESS:</b>
+<textarea name="address"></textarea><br><BR><br>
+<b>ADDRESS(TO BE DELIVERED TO):</b>
+<TEXTAREA name="address2"></TEXTAREA><br><br><br><br>
+<center><input type="SUBMIT" value="SUBMIT" ></center>
+</FORM>
+</body>
+</html>
